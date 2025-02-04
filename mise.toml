@@ -1,0 +1,11 @@
+[tools]
+python = "3.12.2"
+
+[env]
+_.python.venv = { path = ".venv", create = true }
+APP_HOME="{{env.PWD}}"
+DB_HOST="172.25.20.80"
+DB_NAME="smp"
+DB_USER="yescnc"
+DB_PW="yescnc123!"
+DB_PORT="5432"
