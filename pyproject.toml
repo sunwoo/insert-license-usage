@@ -1,0 +1,23 @@
+[project]
+name = "insert-license-usage"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "심선우",email = "suns1997@gmail.com"}
+]
+readme = "README.md"
+requires-python = "=3.12.2"
+dependencies = [
+    "smp-backend (>=1.3,<2.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "suns-pypi"
+url = "https://nexus.suns1997.net/repository/suns-pypi/simple"
+priority = "supplemental"
+
