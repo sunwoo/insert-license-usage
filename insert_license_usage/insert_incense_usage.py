@@ -12,7 +12,7 @@ from smp_backend.app.core.config import dconf
 
 import sqlalchemy as sa
 from sqlalchemy.orm import sessionmaker
-from smp_backend.app.models import user, usergroup, relation, company, admin
+from smp_backend.app.models import license_usage, license, contract
 
 original_db_type = dconf.DB_TYPE
 dconf.DB_TYPE = "postgresql"
@@ -21,5 +21,3 @@ engine = sa.create_engine(dconf.DB_URL, echo=True)
 
 Session = sessionmaker(bind=engine)
 session = Session()
-
-sa.select(User)

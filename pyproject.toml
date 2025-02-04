@@ -21,3 +21,14 @@ name = "suns-pypi"
 url = "https://nexus.suns1997.net/repository/suns-pypi/simple"
 priority = "supplemental"
 
+
+[tool.poetry.group.dev.dependencies]
+setuptools = "*"
+flake8 = "^7.1.1"
+jedi = "^0.19.2"
+black = "^25.1.0"
+yapf = "^0.43.0"
+autopep8 = "^2.3.2"
+pytest = "^8.3.4"
+wat-inspector = "^0.4.3"
+
