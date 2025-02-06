@@ -1,0 +1,37 @@
+* 체크 방식
+
+
+** 미터링 정보
+license_key_id usage_minutes
+
+** 유저 정보
+LicenseKeyUser :
+    license_key_id
+    user_id
+    company_id
+    usergroup_id
+
+LicenseKey:
+    license_key_id
+    license_id
+    
+** 가격 정보
+ContractDetailLicenseHistory
+    license_id
+    license_price
+    license_type_period_id
+    software_id 
+
+license_id 당 분당 사용요금 
+
+** 라이선스 사용시간
+LicenseUserUsage
+    company_id
+    usergroup_id
+    user_id
+    software_id
+    license_id
+    license_key_id
+    created_at
+    license_usage_time
+    license_expense
